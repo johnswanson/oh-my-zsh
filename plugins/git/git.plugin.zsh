@@ -1,7 +1,7 @@
 # Aliases
 alias g='git'
 compdef g=git
-alias gl='git lg'
+alias gl='git lg --branches'
 compdef _git gl=git-log
 alias gs='git status'
 compdef _git gs=git-status
@@ -17,10 +17,8 @@ compdef _git gc=git-commit
 alias gco='git checkout'
 compdef _git gco=git-checkout
 alias gcm='git checkout master'
-alias gr='git remote'
+alias gr='git reset'
 compdef _git gr=git-remote
-alias grv='git remote -v'
-compdef _git grv=git-remote
 alias gb='git branch'
 compdef _git gb=git-branch
 alias gcp='git cherry-pick'
